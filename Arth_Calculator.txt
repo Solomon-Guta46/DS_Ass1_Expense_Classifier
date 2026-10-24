@@ -1,0 +1,22 @@
+
+# Assignment 1
+
+income = float(input("Enter your monthly income: "))
+expenses = float(input("Enter your monthly expenses: "))
+
+
+remaining = income - expenses
+expense_rate = (expenses / income) * 100
+
+
+print("\nMonthly Income:", income)
+print("Monthly Expenses:", expenses)
+print("Remaining Money:", remaining)
+print("Expense Rate:", expense_rate, "%")
+
+if expense_rate <= 50:
+    print("Expense Level: Low")
+elif expense_rate <= 70:
+    print("Expense Level: Moderate")
+else:
+    print("Expense Level: High")
